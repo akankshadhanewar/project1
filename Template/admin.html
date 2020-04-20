@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<head>
+    <title>admin</title>
+</head>
+<style>
+    .table{
+        margin: 5% 5% ;
+    }
+</style>
+<body>
+    <div style="width: 1200px"> 
+        &nbsp;
+        <h1 style="text-align: center;">User details</h1>
+        <table class="table table-hover table-dark">
+            <thead>
+            <tr>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Time of Creation</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for user in user %}
+            <tr>
+                <td>{{user.email}}</td>
+                <td>{{user.password}}</td>
+                <td>{{user.time}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
