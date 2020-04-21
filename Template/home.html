@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport">
+        <title>home</title>
+    </head>
+    <body>
+        <div class = "container-fluid">
+            <h4>&nbsp;</h4>
+            <!-- <div class="container-fluid" style=" height: 100px; width: 650px; background-color:rgba(178, 217, 250, 0.493); text-align: center;"> -->
+                <div class="alert alert-info" style="height: 65px;" role="alert" style="text-align: right;">
+                    <form action="{{url_for('logout')}}">
+                        <button type="submit" class="btn btn-info" formaction="/logout" style="float: left;">Logout</button>
+                    </form> 
+                </div>
+                <h1>&nbsp;</h1>
+                <h1 style="text-align: center;"> You have logged in successfully.</h1>
+            <!-- </div> -->
+        </div>
+    </body>
+</html>
