@@ -20,8 +20,6 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key="email"
 
 db.init_app(app)
-def main():
-    db.create_all()
 
 # Configure session to use filesystem
 app.config["SESSION_PERMANENT"] = False
@@ -82,9 +80,5 @@ def logout():
     session["email"]=None
     return redirect("/register")
 
-# if __name__ == "__main__":
-# print("main method")
-with app.app_context():
-    main()
 
     
